@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+    <head>
+        <meta charset="utf-8">
+        <title>Grip on Software</title>
+
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="icon" href="images/ICTU-LEIDEN.png">
+        <link rel="apple-touch-icon" href="images/ICTU-LEIDEN.png">
+
+        <link rel="stylesheet" href="css/bulma.css">
+        <link rel="stylesheet" href="css/index.css">
+
+		<link rel="canonical" href="https://gros.liacs.nl/">
+		<meta name="description" content="Grip on Software, a large-scale 
+		data-driven scientific analysis of software development practices.
+		We research the effects and effectiveness of various practices within 
+		software development processes.">
+	</head>
+
+    <body>
+		<nav class="navbar is-link is-fixed-top" role="navigation"
+		aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="/" title="Grip on Software">
+					<img src="images/ICTU-LEIDEN.png" alt="ICTU & Leiden University" width="28" height="28">
+					&nbsp;
+					GROS
+				</a>
+				<div class="navbar-burger" data-target="menu-content">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="navbar-menu" id="menu-content">
+				<div class="navbar-start">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link" href="#project">
+							Project
+						</a>
+						<div class="navbar-dropdown is-boxed">
+							<a class="navbar-item" href="#overview">
+								Overview
+							</a>
+							<hr class="navbar-divider">
+							<a class="navbar-item" href="#models">
+								Models
+							</a>
+							<a class="navbar-item" href="#data">
+								Data
+							</a>
+							<a class="navbar-item" href="#security">
+								Security
+							</a>
+							<hr class="navbar-divider">
+							<a class="navbar-item" href="#prediction">
+								Prediction
+							</a>
+							<a class="navbar-item" href="#visualization">
+								Visualization
+							</a>
+						</div>
+					</div>
+					<a class="navbar-item" href="#links">
+						Links
+					</a>
+					<a class="navbar-item" href="#contact">
+						Contact
+					</a>
+				</div>
+				<div class="navbar-end is-hidden-mobile" id="icons">
+					<a class="navbar-item" href="https://liacs.leidenuniv.nl"
+					title="Leiden Institute of Advanced Computer Science, 
+					Leiden University">
+						<img src="images/leiden.svg" alt="LIACS, Leiden 
+						University" width="94" height="52" style="max-height: 
+						5rem">
+					</a>
+					<a class="navbar-item" href="https://www.ictu.nl" title="ICTU">
+						<img src="images/ictu.svg" alt="ICTU">
+					</a>
+				</div>
+				<div class="navbar-end card is-block-mobile" id="icons-mobile"
+				aria-hidden="true" style="display: none">
+					<div class="navbar-item columns is-mobile">
+						<div class="column is-half">
+							<a href="https://liacs.leidenuniv.nl" title="Leiden 
+							Institute of Advanced Computer Science, Leiden 
+							University">
+								<img src="images/leiden-mobile.svg" alt="LIACS, 
+								Leiden University" width="94" height="52"
+								style="max-height: 5rem">
+							</a>
+						</div>
+						<div class="column is-half has-text-right">
+							<a href="https://www.ictu.nl" title="ICTU">
+								<img src="images/ictu.svg" alt="ICTU">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+        <section class="content">
+            <div class="container">
+				<header>
+                	<h1 class="title">Grip on Software</h1>
+					<h2 class="subtitle is-5">Large-scale data-driven analysis 
+						of software development practices
+					</h2>
+				</header>
+
+                <div class="container" id="project">
+					<header>
+						<h2 class="title is-4">Project</h2>
+					</header>
+					<article class="box" id="overview">
+						<header class="box-header">
+							<h3 class="subtitle is-4">Overview</h3>
+						</header>
+						<p>
+							The Grip on Software (GROS) project performs a
+							scientifically grounded research into the effects 
+							and effectiveness of various practices within 
+							software development processes. Specifically, we 
+							focus on investigating the use of Scrum and other 
+							agile software development methods, and study the 
+							efficacy of events and of actions that take place 
+							during the development cycle, such as code changes 
+							and team meetings, and forecast the outcome of the 
+							process or detailed divisions of it, including the 
+							successful release of the product.
+						</p>
+						<p>
+							The GROS project is a collaboration between the
+							<a href="https://liacs.leidenuniv.nl/">
+							Leiden Institute of Advanced Computer Science 
+							(LIACS)</a>, as part of
+							<a href="https://www.universiteitleiden.nl/">
+							Leiden University</a>, and
+							<a href="https://www.ictu.nl/">Stichting ICTU</a>, 
+							an independent government-owned organization in the 
+							Netherlands.<br>
+							Research in large-scale data analytics of software 
+							development is increasingly important because such 
+							projects are often high-risk with funding of public 
+							money and application of novel technologies, and 
+							many end-users of citizens may be be impacted by 
+							the success or failure of the project. Many factors 
+							play a role in the quality, reliability, usability, 
+							security, and effectiveness aspects of the 
+							developed product, which are measurable during the 
+							advancement of the developed product increments.
+						</p>
+					</article>
+
+					<article class="box" id="models">
+						<header class="box-header">
+							<h3 class="subtitle is-4">Models</h3>
+						</header>
+						<p>
+							We first model the software development ecosystem 
+							as a whole, including actors, information sources, 
+							stages and transitions. This flexible yet specific 
+							model explains the behavior we observe in the 
+							process and allows for comparisons with existing 
+							frameworks as well as perform model validation 
+							using models from other applications that share 
+							some intrinsic similarities, such as predator-prey 
+							models, arrangements of factory pipelines, and 
+							(self-)learning environments.
+						</p>
+						<p>
+							These models provide us with insights and different 
+							viewpoints of the inner workings of agile software 
+							development practices, such as Scrum, Lean and 
+							extreme programming, and form the basis for 
+							extracting information from the process.
+						</p>
+						<figure
+						class="image column is-one-third is-offset-one-third">
+							<img src="images/scrum.png" alt="Workflow of 
+							a sprint in the Scrum framework" title="Workflow of 
+							a sprint in the Scrum framework">
+						</figure>
+					</article>
+
+					<article class="box" id="data">
+						<header class="box-header">
+							<h3 class="subtitle is-4">Data</h3>
+						</header>
+						<p>
+							Software development projects have their own unique 
+							set of instances of tools used during the process, 
+							where there is usually a core selection of systems 
+							there are essential to the process, regardless of 
+							methodology. These tools are version control 
+							systems, e.g.,
+							<a href="https://git-scm.com/">Git</a> or
+							<a href="https://subversion.apache.org/">
+							Subversion</a>, potentially combined with
+							a built-in code review and tracking utility 
+							provided by services like
+							<a href="https://about.gitlab.com/">GitLab</a>,
+							<a href="https://github.com/">GitHub</a> and
+							<a href="https://www.visualstudio.com/tfs/">
+							Team Foundation Server</a> (<a
+		  					href="https://www.visualstudio.com/team-services/"
+		 					title="Visual Studio Team Services">VSTS</a>).
+							User stories, bug reports and technical backlogs 
+							are often managed separately using project tracking 
+							software such as
+							<a href="https://www.atlassian.com/software/jira">
+							JIRA</a>. Inspection of software quality is
+							provided by platforms such as
+							<a href="https://www.sonarqube.org/">SonarQube</a>, 
+							and automated build and continuous integration 
+							pipelines are served by systems like
+							<a href="https://jenkins.io/">Jenkins</a> and
+							<a href="https://travis-ci.org/">Travis</a>. 
+							Additional project registration systems for 
+							authorization control and meeting reservations also 
+							play a role.
+						</p>
+						<p>
+							We consider all of these tools as feasible sources 
+							of information for our research, because they each 
+							provide disclosure of specific parts of the 
+							development process. Many tools store the complete 
+							record of actions taken within the timeline of the 
+							process for the purpose of referencing or auditing 
+							these actions at a later moment. Some tools provide 
+							limited aggregation of their own data, such as burn 
+							down charts, but these are always restricted to the
+							data available within the tool itself.
+						</p>
+						<figure
+						class="image column is-half is-offset-one-quarter">
+							<img src="images/pipeline.png" alt="Pipeline of the 
+							collection of data and their purposes after feature 
+							extraction" title="Pipeline of the collection of 
+							data and their purposes after feature extraction">
+						</figure>
+						<p>
+							We make use of an automated data pipeline to 
+							extract metrics, events and metadata from these
+							tools, which combines the data sources and links 
+							relevant actions where possible. This database 
+							forms the basis for a data set of features.
+						</p>
+					</article>
+
+					<article class="box" id="security">
+						<header class="box-header">
+							<h3 class="subtitle is-4">Security</h3>
+						</header>
+						<p>
+							Privacy and security play an important role during 
+							the entire research project. All data is stored on 
+							secured servers with full disk encryption, and the 
+							transfer of data only occurs on secure networks or 
+							through the use of HTTPS and GPG encryption.<br>
+							Personal information is treated specially. The 
+							names of the people that are involved in a software 
+							development process, including the project leaders, 
+							clients and developers themselves, are obfuscated 
+							using one-way encryption immediately when the data 
+							is collected. This means that one can only 
+							determine whether someone is involved in a project 
+							if the attacker already has the personal 
+							information as well as the original encryption key, 
+							which always remains at the source location.
+						</p>
+						<p>
+							We collect personal information only to uniquely 
+							identify the same actor across development 
+							platforms used within the same project. Standard 
+							obfuscation techniques would be insufficient for 
+							this purpose. Our intention is to provide feedback 
+							of results on a project level, but details about 
+							actor roles may still help in this aspect.
+						</p>
+						<p>
+							The raw data is only handled by researchers of the 
+							GROS project after certificates of good conduct, 
+							non-disclosure agreements and privacy impact 
+							assessments have been produced or signed. Personal 
+							data and project-sensitive information is never 
+							shared with anyone outside of the project.
+						</p>
+					</article>
+
+					<article class="box" id="prediction">
+						<header class="box-header">
+							<h3 class="subtitle is-4">Prediction</h3>
+						</header>
+						<p>
+							Our goal is to determine how we can effectively and
+							accurately make use of the factors that strongly
+							determine the success or failure of a software
+							development process, using multiple means to measure
+							these factors and the success factor, and finally
+							to automate a system that provides a recommendation
+							regarding the risk and how to reduce it.
+						</p>
+						<p>
+							Since there exist different kinds of development
+							processes with different means of determining
+							the risk during the lifespan of a project, we focus
+							on a group of methodologies known as Agile software
+							development. In particular, we look at the Scrum
+							framework which makes use of short time frames known
+							as sprints, where developers commit to a number of
+							goals that they think are reachable during this
+							time, and implement the desired features
+							corresponding to those goals. This provides us with
+							a large set of historical information of sets
+							of measurable events, as well as some feedback
+							about whether the developers and the client was
+							satisfied with the process and the delivered product
+							increment.
+						</p>
+						<p>
+							We focus on determining whether the developers reach
+							all of their goals completely within the allotted
+							time, through the use of various machine learning
+							algorithms which learn from past sprints and provide
+							an indication of the risk. We also estimate the
+							effort required to undertake the user stories and
+							other goals at hand. This allows us to find what
+							kinds of properties are relevant to reaching the
+							goals with more certainty.
+						</p>
+					</article>
+
+					<article class="box" id="visualization">
+						<header class="box-header">
+							<h3 class="subtitle is-4">Visualization</h3>
+						</header>
+						<p>
+							Aside from the <b>prediction</b> result, we provide 
+							separate but intertwined visualizations which allow
+							people within the organization to inspect the
+							collected data set and view all kinds of events,
+							statistics, and properties in a new way that
+							existing tools do not make available.
+							We specifically make comparisons between projects
+							from the same organization easy such that teams can
+							learn from each other, provide context to their
+							practical methodologies, and help think about
+							improvements to the entire process.
+						</p>
+						<p>
+							The visualizations that we offer at this point are:
+						</p>
+						<ul>
+							<li>
+								a <b>timeline</b> of events occurring in the
+								lifespan of a project, and of individual or
+								multiple sprints, including a linked
+								<b>burn down chart</b>;
+							</li>
+							<li>
+								a <b>heat map</b> showing a calendar of code
+								commit volumes per day while ensuring that
+								projects of different sizes are comparable
+								using color map scaling, with a mode to find
+								extraordinary changes, as well as
+								integration with external calendar data such
+								as weather and traffic;
+							</li>
+							<li>
+								a <b>collaboration graph</b> exhibiting the
+								tight network within an organization where
+								teams help each other at various times of
+								their project lifespans, including a time
+								lapse mode;
+							</li>
+							<li>
+								a <b>leaderboard</b> where statistics about
+								different projects are presented in an
+								interactive fashion, allowing users to delve
+								through and combine different attributes,
+								while still providing measures relevant to
+								the attributes;
+							</li>
+							<li>
+								a <b>status dashboard</b> showing the health
+								and resource usage of projects with support
+								for historical data comparisons;
+							</li>
+							<li>
+								and more visualizations that display the
+								workings of various parts of the process, such
+								as the <b>flow</b> of that issues follow, or
+								provide options to generate
+								<b>customized reports</b>.
+							</li>
+						</ul>
+					</article>
+				</div>
+
+				<div class="container" id="links">
+					<header>
+						<h2 class="title is-4">Relevant links</h2>
+					</header>
+					<div class="box">
+						<p>
+							You can read more about the research in the 
+							following academic publications and articles:
+						</p>
+						<ul>
+							<li>
+								ICTU, May 2018. <a hreflang="nl"
+						   		href="https://www.ictu.nl/publicaties/gros-onderzoekt-succesfactoren-scrum">
+						   		GROS onderzoekt successfactoren Scrum</a>
+								(Dutch).
+							</li>
+							<li>
+								L. Helwerda, F. Niessink, F.J. Verbeek (2017). 
+								<a href="documents/KDIR_2017.pdf">
+								Conceptual process models and quantitative 
+								analysis of classification problems in Scrum 
+								software development practices</a>. In
+								Proceedings of the 9th International Joint 
+								Conference on Knowledge Discovery, Knowledge 
+								Engineering and Knowledge Management: 
+								Volume&nbsp;1 (KDIR),
+								presented in November&nbsp;2017 at the
+								<a href="http://www.kdir.ic3k.org/Home.aspx">
+								Knowledge Discovery and Information Retrieval 
+								conference</a>
+							</li>
+							<li>
+								ICTU, January 2018. <a hreflang="nl"
+								href="https://www.ictu.nl/publicaties/publicatie-paper-grip-op-software">
+								Publicatie paper 'Grip op Software'</a> 
+								(Dutch).
+							</li>
+							<li>
+								ICTU, December 2016. <a hreflang="nl"
+								href="https://www.ictu.nl/nieuws/softwareontwikkeling-onder-wetenschappelijke-loep">
+								Softwareontwikkeling onder wetenschappelijke 
+								loep</a> (Dutch).
+							</li>
+							<li>
+								Universiteit Leiden, July 2016. <a
+								href="https://www.universiteitleiden.nl/en/news/2016/07/leiden-university-and-ictu-start-research-on-software-development">
+								Leiden University and ICTU start research on 
+								software development</a>.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="container" id="contact">
+					<header>
+						<h2 class="title is-4">Contact</h2>
+					</header>
+					<div class="box">
+						<p>
+							If you have any inquiries regarding the Grip on 
+							Software research, please contact the researcher at 
+							<a href="mailto:l.s.helwerda@liacs.leidenuniv.nl">
+							l.s.helwerda@liacs.leidenuniv.nl</a>.
+						</p>
+					</div>
+				</div>
+            </div>
+        </section>
+
+		<script src="js/navbar.js" defer></script>
+    </body>
+</html>
