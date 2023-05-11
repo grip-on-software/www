@@ -1,13 +1,15 @@
-.navbar.is-link {
-	background-color: #002e65;
-	color: #ffffff;
-}
 @media screen and (max-width: 768px) {
 	.navbar-menu {
 		min-height: 100vh;
 	}
 	.navbar-start {
 		margin-bottom: 8rem;
+	}
+	.navbar-item.has-dropdown:focus .navbar-link::after, .navbar-item.has-dropdown:focus-within .navbar-link::after {
+		transform: rotate(135deg) translate(0.25em, -0.25em);
+	}
+	.navbar-item.has-dropdown:focus .navbar-dropdown, .navbar-item.has-dropdown:focus-within .navbar-dropdown {
+		display: none;
 	}
 }
 #icons-mobile {

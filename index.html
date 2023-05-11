@@ -2,6 +2,7 @@
 <html lang="en" class="has-navbar-fixed-top">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Grip on Software</title>
 
         <link rel="shortcut icon" href="favicon.ico">
@@ -12,10 +13,7 @@
         <link rel="stylesheet" href="css/index.css">
 
 		<link rel="canonical" href="https://gros.liacs.nl/">
-		<meta name="description" content="Grip on Software, a large-scale 
-		data-driven scientific analysis of software development practices.
-		We research the effects and effectiveness of various practices within 
-		software development processes.">
+		<meta name="description" content="Grip on Software, a large-scale data-driven scientific analysis of Scrum software development practices. We research the effects and effectiveness of various practices within software development processes.">
 	</head>
 
     <body>
@@ -36,8 +34,8 @@
 			<div class="navbar-menu" id="menu-content">
 				<div class="navbar-start">
 					<div class="navbar-item has-dropdown is-hoverable">
-						<a class="navbar-link" href="#project">
-							Project
+						<a class="navbar-link" href="#research">
+							Research
 						</a>
 						<div class="navbar-dropdown is-boxed">
 							<a class="navbar-item" href="#overview">
@@ -70,12 +68,20 @@
 					</a>
 				</div>
 				<div class="navbar-end is-hidden-mobile" id="icons">
-					<a class="navbar-item" href="https://liacs.leidenuniv.nl"
-					title="Leiden Institute of Advanced Computer Science, 
-					Leiden University">
-						<img src="images/leiden.svg" alt="LIACS, Leiden 
-						University" width="94" height="52" style="max-height: 
-						5rem">
+					<a class="navbar-item"
+					href="https://liacs.leidenuniv.nl"
+					title="Leiden Institute of Advanced Computer Science">
+						<img src="images/liacs.svg" alt="LIACS" width="108" height="28">
+					</a>
+					<a class="navbar-item is-hidden-touch" style="padding: 0"
+					href="https://www.universiteitleiden.nl/"
+					title="Leiden University">
+						<img src="images/leiden-en-light.svg" alt="Leiden University" width="94" height="52" style="max-height: 5rem">
+					</a>
+					<a class="navbar-item is-hidden-desktop" style="padding: 0"
+					href="https://www.universiteitleiden.nl/"
+					title="Leiden University">
+						<img src="images/leiden-en-dark.svg" alt="Leiden University" width="94" height="52" style="max-height: 5rem">
 					</a>
 					<a class="navbar-item" href="https://www.ictu.nl" title="ICTU">
 						<img src="images/ictu.svg" alt="ICTU">
@@ -85,12 +91,8 @@
 				aria-hidden="true" style="display: none">
 					<div class="navbar-item columns is-mobile">
 						<div class="column is-half">
-							<a href="https://liacs.leidenuniv.nl" title="Leiden 
-							Institute of Advanced Computer Science, Leiden 
-							University">
-								<img src="images/leiden-mobile.svg" alt="LIACS, 
-								Leiden University" width="94" height="52"
-								style="max-height: 5rem">
+							<a href="https://liacs.leidenuniv.nl" title="Leiden Institute of Advanced Computer Science, Leiden University">
+								<img src="images/leiden-mobile.svg" alt="LIACS, Leiden University" width="94" height="52" style="max-height: 5rem">
 							</a>
 						</div>
 						<div class="column is-half has-text-right">
@@ -106,14 +108,13 @@
             <div class="container">
 				<header>
                 	<h1 class="title">Grip on Software</h1>
-					<h2 class="subtitle is-5">Large-scale data-driven analysis 
-						of software development practices
-					</h2>
+					<p class="subtitle is-5">Large-scale data-driven analysis of Scrum software development practices
+					</p>
 				</header>
 
-                <div class="container" id="project">
+                <div class="container" id="research">
 					<header>
-						<h2 class="title is-4">Project</h2>
+						<h2 class="title is-4">Research</h2>
 					</header>
 					<article class="box" id="overview">
 						<header class="box-header">
@@ -179,10 +180,8 @@
 							extracting information from the process.
 						</p>
 						<figure
-						class="image column is-one-third is-offset-one-third">
-							<img src="images/scrum.png" alt="Workflow of 
-							a sprint in the Scrum framework" title="Workflow of 
-							a sprint in the Scrum framework">
+						class="image column is-one-third-desktop is-offset-one-third-desktop is-half-touch is-offset-one-quarter-touch">
+							<img src="images/scrum.png" title="Workflow of a sprint in the Scrum framework" alt="Workflow of a sprint in the Scrum framework: A Product Owner maintains a Product Backlog with Stories. Some stories are selected during a (pre)refinement and sprint planning to be part of the Sprint Backlog. The Sprint (2-3 weeks) is a cycle, where the Development Team works on the Stories and holds Daily Scrum meetings. In the end, the work leads to a Potentially Shippable Product Increment, and Sprint Review and Retrospective meetings are held.">
 						</figure>
 					</article>
 
@@ -204,21 +203,24 @@
 							provided by services like
 							<a href="https://about.gitlab.com/">GitLab</a>,
 							<a href="https://github.com/">GitHub</a> and
-							<a href="https://www.visualstudio.com/tfs/">
-							Team Foundation Server</a> (<a
+							<a href="https://azure.microsoft.com/en-us/products/devops/server/">
+							Azure DevOps Server</a>
+							(formerly <a
+							href="https://www.visualstudio.com/tfs/"
+							title="Team Foundation Server">TFS</a>
+							and <a
 		  					href="https://www.visualstudio.com/team-services/"
 		 					title="Visual Studio Team Services">VSTS</a>).
 							User stories, bug reports and technical backlogs 
 							are often managed separately using project tracking 
 							software such as
 							<a href="https://www.atlassian.com/software/jira">
-							JIRA</a>. Inspection of software quality is
+							Jira</a>. Inspection of software quality is
 							provided by platforms such as
 							<a href="https://www.sonarqube.org/">SonarQube</a>, 
 							and automated build and continuous integration 
 							pipelines are served by systems like
-							<a href="https://jenkins.io/">Jenkins</a> and
-							<a href="https://travis-ci.org/">Travis</a>. 
+							<a href="https://jenkins.io/">Jenkins</a>. 
 							Additional project registration systems for 
 							authorization control and meeting reservations also 
 							play a role.
@@ -236,18 +238,17 @@
 							data available within the tool itself.
 						</p>
 						<figure
-						class="image column is-half is-offset-one-quarter">
-							<img src="images/pipeline.png" alt="Pipeline of the 
-							collection of data and their purposes after feature 
-							extraction" title="Pipeline of the collection of 
-							data and their purposes after feature extraction">
+						class="image column is-half-desktop is-offset-one-quarter-desktop">
+							<img src="images/pipeline.png" title="Pipeline of the collection of data and their uses after feature extraction" alt="The GROS data acquisition pipeline: The software development project defines a number of systems, namely source code repository, issue tracker and quality control metrics collection. We gather data from this system with a Python-based agent, leading to an intermediate collection in JSON form. This collection is imported with a Java program into a MonetDB database. With an R/SQL based analysis program, we extract features for visualization with D3.js and for prediction with TensorFlow models.">
 						</figure>
 						<p>
-							We make use of an automated data pipeline to 
-							extract metrics, events and metadata from these
-							tools, which combines the data sources and links 
-							relevant actions where possible. This database 
-							forms the basis for a data set of features.
+							We construct the GROS data acquisition pipeline,
+							an automated data pipeline to extract metrics,
+							events and metadata from these systems and tools,
+							which combines the data sources and links relevant
+							events where possible. This database forms the basis
+							for a data set of features, which we used for
+							machine learning and information visualization.
 						</p>
 					</article>
 
@@ -398,6 +399,7 @@
 								<b>customized reports</b>.
 							</li>
 						</ul>
+						<p>View an <a href="/ictu/visualization/">anonymized version of the visualizations</a>.</p>
 					</article>
 				</div>
 
@@ -408,9 +410,16 @@
 					<div class="box">
 						<p>
 							You can read more about the research in the 
-							following academic publications and articles:
+							following academic publications, articles,
+							technical specifications and code repositories:
 						</p>
 						<ul>
+							<li>
+								ICTU and Leiden University. Grip on Software code repositories (<a href="https://github.com/grip-on-software">GitHub</a>).
+							</li>
+							<li>
+								OpenAPI specification of <a href="/swagger/">Prediction API</a> and other intermediate formats.
+							</li>
 							<li>
 								ICTU, May 2018. <a hreflang="nl"
 						   		href="https://www.ictu.nl/publicaties/gros-onderzoekt-succesfactoren-scrum">
