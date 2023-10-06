@@ -1,0 +1,19 @@
+{
+  "name": "@gros/www",
+  "version": "0.0.1",
+  "description": "Website of the Grip on Software research project",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grip-on-software/www.git"
+  },
+  "author": "Leon Helwerda <l.s.helwerda@liacs.leidenuniv.nl>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/grip-on-software/www/issues"
+  },
+  "homepage": "https://github.com/grip-on-software/www",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
+  }
+}

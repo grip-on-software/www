@@ -1,14 +1,14 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
 	.navbar-menu {
 		min-height: 100vh;
 	}
 	.navbar-start {
 		margin-bottom: 8rem;
 	}
-	.navbar-item.has-dropdown:focus .navbar-link::after, .navbar-item.has-dropdown:focus-within .navbar-link::after {
+	.navbar-item.has-dropdown:not(.is-active) .navbar-link::after {
 		transform: rotate(135deg) translate(0.25em, -0.25em);
 	}
-	.navbar-item.has-dropdown:focus .navbar-dropdown, .navbar-item.has-dropdown:focus-within .navbar-dropdown {
+	.navbar-item.has-dropdown:not(.is-active) .navbar-dropdown {
 		display: none;
 	}
 }
@@ -30,6 +30,6 @@
 .container a:hover, .container a:focus {
 	text-decoration: none;
 }
-.container header {
-	margin-bottom: 1.5rem;
+.container h3.list-header {
+	margin-bottom: 0;
 }

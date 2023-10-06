@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#485fc7">
+        <meta name="theme-color" content="#485fc7">
         <title>Grip on Software</title>
 
         <link rel="shortcut icon" href="favicon.ico">
@@ -12,12 +12,15 @@
 
         <link rel="stylesheet" href="css/bulma.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/brands.min.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/solid.min.css">
 
-		<link rel="canonical" href="https://gros.liacs.nl/">
-		<meta name="description" content="Grip on Software, a large-scale data-driven scientific analysis of Scrum software development practices. We research the effects and effectiveness of various practices within software development processes.">
+        <link rel="canonical" href="https://gros.liacs.nl/">
+        <meta name="description" content="Grip on Software, a large-scale data-driven scientific analysis of Scrum software development practices. We research the effects and effectiveness of various practices within software development processes.">
 
-		<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"ResearchProject","url":"https:\/\/gros.liacs.nl\/","name":"Grip on Software","description":"Large-scale data-driven analysis of Scrum software development practices","foundingDate":"2016-07-06","contactPoint":{"@type":"ContactPoint","email":"l.s.helwerda@liacs.leidenuniv.nl","contactType":"Research inquiries"},"logo":{"@type":"ImageObject","url":"https:\/\/gros.liacs.nl\/images\/ICTU-LEIDEN.png"}}</script>
-	</head>
+        <script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"ResearchProject","url":"https:\/\/gros.liacs.nl\/","name":"Grip on Software","description":"Large-scale data-driven analysis of Scrum software development practices","foundingDate":"2016-07-06","contactPoint":{"@type":"ContactPoint","email":"l.s.helwerda@liacs.leidenuniv.nl","contactType":"Research inquiries"},"logo":{"@type":"ImageObject","url":"https:\/\/gros.liacs.nl\/images\/ICTU-LEIDEN.png"}}</script>
+    </head>
 
     <body>
 		<nav class="navbar is-link is-fixed-top" role="navigation"
@@ -42,30 +45,84 @@
 						</a>
 						<div class="navbar-dropdown is-boxed">
 							<a class="navbar-item" href="#overview">
-								Overview
+								<span class="icon">
+									<i class="fas fa-flask" aria-hidden="true"></i>
+								</span>
+								<span>Overview</span>
 							</a>
 							<hr class="navbar-divider">
 							<a class="navbar-item" href="#models">
-								Models
+								<span class="icon">
+									<i class="fas fa-project-diagram" aria-hidden="true"></i>
+								</span>
+								<span>Models</span>
 							</a>
 							<a class="navbar-item" href="#data">
-								Data
+								<span class="icon">
+									<i class="fas fa-database" aria-hidden="true"></i>
+								</span>
+								<span>Data</span>
 							</a>
 							<a class="navbar-item" href="#security">
-								Security
+								<span class="icon">
+									<i class="fas fa-lock" aria-hidden="true"></i>
+								</span>
+								<span>Security</span>
 							</a>
 							<hr class="navbar-divider">
 							<a class="navbar-item" href="#prediction">
-								Prediction
+								<span class="icon">
+									<i class="fas fa-percentage" aria-hidden="true"></i>
+								</span>
+								<span>Prediction</span>
 							</a>
 							<a class="navbar-item" href="#visualization">
-								Visualization
+								<span class="icon">
+									<i class="fas fa-eye" aria-hidden="true"></i>
+								</span>
+								<span>Visualization</span>
 							</a>
 						</div>
 					</div>
-					<a class="navbar-item" href="#links">
-						Links
-					</a>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link" href="#links">
+							Links
+						</a>
+						<div class="navbar-dropdown is-boxed">
+							<a class="navbar-item" href="/ictu/visualization/">
+								<span class="icon">
+									<i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+								</span>
+								<span>Visualizations</span>
+							</a>
+							<hr class="navbar-divider">
+							<a class="navbar-item" href="https://github.com/grip-on-software">
+								<span class="icon">
+									<i class="fab fa-github" aria-hidden="true"></i>
+								</span>
+								<span>GitHub</span>
+							</a>
+							<a class="navbar-item" href="/swagger/">
+								<span class="icon">
+									<i class="fas fa-cogs" aria-hidden="true"></i>
+								</span>
+								<span>API</span>
+							</a>
+							<a class="navbar-item" href="/schema/">
+								<span class="icon">
+									<i class="fas fa-file" aria-hidden="true"></i>
+								</span>
+								<span>Schemas</span>
+							</a>
+							<hr class="navbar-divider">
+							<a class="navbar-item" href="#articles">
+								<span class="icon">
+									<i class="fas fa-book" aria-hidden="true"></i>
+								</span>
+								<span>Articles</span>
+							</a>
+						</div>
+					</div>
 					<a class="navbar-item" href="#contact">
 						Contact
 					</a>
@@ -76,15 +133,10 @@
 					title="Leiden Institute of Advanced Computer Science">
 						<img src="images/liacs.svg" alt="LIACS" width="108" height="28">
 					</a>
-					<a class="navbar-item is-hidden-touch" style="padding: 0"
+					<a class="navbar-item" style="padding: 0"
 					href="https://www.universiteitleiden.nl/"
 					title="Leiden University">
 						<img src="images/leiden-en-light.svg" alt="Leiden University" width="94" height="52" style="max-height: 5rem">
-					</a>
-					<a class="navbar-item is-hidden-desktop" style="padding: 0"
-					href="https://www.universiteitleiden.nl/"
-					title="Leiden University">
-						<img src="images/leiden-en-dark.svg" alt="Leiden University" width="94" height="52" style="max-height: 5rem">
 					</a>
 					<a class="navbar-item" href="https://www.ictu.nl" title="ICTU">
 						<img src="images/ictu.svg" alt="ICTU">
@@ -93,12 +145,17 @@
 				<div class="navbar-end card is-block-mobile" id="icons-mobile"
 				aria-hidden="true" style="display: none">
 					<div class="navbar-item columns is-mobile">
-						<div class="column is-half">
-							<a href="https://liacs.leidenuniv.nl" title="Leiden Institute of Advanced Computer Science, Leiden University">
-								<img src="images/leiden-mobile.svg" alt="LIACS, Leiden University" width="94" height="52" style="max-height: 5rem">
+						<div class="column is-one-third">
+							<a href="https://liacs.leidenuniv.nl" title="Leiden Institute of Advanced Computer Science">
+								<img src="images/liacs.svg" alt="LIACS" width="94" height="52" style="max-height: 5rem">
 							</a>
 						</div>
-						<div class="column is-half has-text-right">
+						<div class="column is-one-third has-text-center">
+							<a href="https://www.universiteitleiden.nl/en" title="Leiden University">
+								<img src="images/leiden-en-dark.svg" alt="Leiden University" width="94" height="52" style="max-height: 5rem">
+							</a>
+						</div>
+						<div class="column is-one-third has-text-right">
 							<a href="https://www.ictu.nl" title="ICTU">
 								<img src="images/ictu.svg" alt="ICTU">
 							</a>
@@ -121,7 +178,12 @@
 					</header>
 					<article class="box" id="overview">
 						<header class="box-header">
-							<h3 class="subtitle is-4">Overview</h3>
+							<h3 class="subtitle is-4 icon-text">
+								<span class="icon">
+									<i class="fas fa-flask" aria-hidden="true"></i>
+								</span>
+								<span>Overview</span>
+							</h3>
 						</header>
 						<p>
 							The Grip on Software (GROS) project performs a
@@ -161,7 +223,12 @@
 
 					<article class="box" id="models">
 						<header class="box-header">
-							<h3 class="subtitle is-4">Models</h3>
+							<h3 class="subtitle is-4 icon-text">
+								<span class="icon">
+									<i class="fas fa-project-diagram fa-sm" aria-hidden="true"></i>
+								</span>
+								<span>Models</span>
+							</h3>
 						</header>
 						<p>
 							We first model the software development ecosystem 
@@ -190,7 +257,12 @@
 
 					<article class="box" id="data">
 						<header class="box-header">
-							<h3 class="subtitle is-4">Data</h3>
+							<h3 class="subtitle is-4 icon-text">
+								<span class="icon">
+									<i class="fas fa-database" aria-hidden="true"></i>
+								</span>
+								<span>Data</span>
+							</h3>
 						</header>
 						<p>
 							Software development projects have their own unique 
@@ -199,14 +271,16 @@
 							there are essential to the process, regardless of 
 							methodology. These tools are version control 
 							systems, e.g.,
-							<a href="https://git-scm.com/">Git</a> or
+							<a href="https://git-scm.com/"><i class="fab fa-git-alt" aria-hidden="true"></i> Git</a> or
 							<a href="https://subversion.apache.org/">
+							<i class="fas fa-feather-alt" aria-hidden="true"></i>
 							Subversion</a>, potentially combined with
 							a built-in code review and tracking utility 
 							provided by services like
-							<a href="https://about.gitlab.com/">GitLab</a>,
-							<a href="https://github.com/">GitHub</a> and
+							<a href="https://about.gitlab.com/"><i class="fab fa-gitlab" aria-hidden="true"></i> GitLab</a>,
+							<a href="https://github.com/"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a> and
 							<a href="https://azure.microsoft.com/en-us/products/devops/server/">
+							<i class="fab fa-microsoft" aria-hidden="true"></i>
 							Azure DevOps Server</a>
 							(formerly <a
 							href="https://www.visualstudio.com/tfs/"
@@ -218,12 +292,13 @@
 							are often managed separately using project tracking 
 							software such as
 							<a href="https://www.atlassian.com/software/jira">
+							<i class="fab fa-jira" aria-hidden="true"></i>
 							Jira</a>. Inspection of software quality is
 							provided by platforms such as
-							<a href="https://www.sonarqube.org/">SonarQube</a>, 
+							<a href="https://www.sonarqube.org/"><i class="fas fa-rss" aria-hidden="true"></i> SonarQube</a>, 
 							and automated build and continuous integration 
 							pipelines are served by systems like
-							<a href="https://jenkins.io/">Jenkins</a>. 
+							<a href="https://jenkins.io/"><i class="fab fa-jenkins" aria-hidden="true"></i> Jenkins</a>. 
 							Additional project registration systems for 
 							authorization control and meeting reservations also 
 							play a role.
@@ -257,7 +332,12 @@
 
 					<article class="box" id="security">
 						<header class="box-header">
-							<h3 class="subtitle is-4">Security</h3>
+							<h3 class="subtitle is-4 icon-text">
+								<span class="icon">
+									<i class="fas fa-lock" aria-hidden="true"></i>
+								</span>
+								<span>Security</span>
+							</h3>
 						</header>
 						<p>
 							Privacy and security play an important role during 
@@ -297,7 +377,12 @@
 
 					<article class="box" id="prediction">
 						<header class="box-header">
-							<h3 class="subtitle is-4">Prediction</h3>
+							<h3 class="subtitle is-4 icon-text">
+								<span class="icon">
+									<i class="fas fa-percent" aria-hidden="true"></i>
+								</span>
+								<span>Prediction</span>
+							</h3>
 						</header>
 						<p>
 							Our goal is to determine how we can effectively and
@@ -340,7 +425,12 @@
 
 					<article class="box" id="visualization">
 						<header class="box-header">
-							<h3 class="subtitle is-4">Visualization</h3>
+							<h3 class="subtitle is-4 icon-text">
+								<span class="icon">
+									<i class="fas fa-eye" aria-hidden="true"></i>
+								</span>
+								<span>Visualization</span>
+							</h3>
 						</header>
 						<p>
 							Aside from the <b>prediction</b> result, we provide 
@@ -402,7 +492,7 @@
 								<b>customized reports</b>.
 							</li>
 						</ul>
-						<p>View an <a href="/ictu/visualization/">anonymized version of the visualizations</a>.</p>
+						<p>View an <a href="/ictu/visualization/"><i class="fas fa-tachometer-alt" aria-hidden="true"></i> anonymized version of the visualizations</a>.</p>
 					</article>
 				</div>
 
@@ -412,17 +502,32 @@
 					</header>
 					<div class="box">
 						<p>
-							You can read more about the research in the 
-							following academic publications, articles,
-							technical specifications and code repositories:
+							You can learn more about the research in the 
+							following resources.
 						</p>
+						<h3 class="title is-6 list-header icon-text">
+							<span class="icon">
+								<i class="fas fa-file-code fa-lg" aria-hidden="true"></i>
+							</span>
+							<span>Technical specifications and code repositories</span>
+						</h3>
 						<ul>
 							<li>
-								ICTU and Leiden University. Grip on Software code repositories (<a href="https://github.com/grip-on-software">GitHub</a>).
+								ICTU and Leiden University. Grip on Software code repositories. Available on <a href="https://github.com/grip-on-software"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>.
 							</li>
 							<li>
-								OpenAPI specification of <a href="/swagger/">Prediction API</a> as well as other intermediate exhange formats (<a href="/schema/">JSON schemas</a>).
+								Database structure model diagram (<a href="database-model.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>).
+							<li>
+								OpenAPI specification of <a href="/swagger/"><i class="fas fa-cogs" aria-hidden="true"></i> Prediction API</a> (including the <a href="/combined/prediction/api/v1/dataset"><i class="fas fa-file-alt" aria-hidden="true"></i> complete dataset</a>) as well as other intermediate exhange formats in <a href="/schema/"><i class="fas fa-file" aria-hidden="true"></i> JSON schemas</a>.
 							</li>
+						</ul>
+						<h3 id="articles" class="title is-6 list-header icon-text">
+							<span class="icon">
+								<i class="fas fa-book fa-lg" aria-hidden="true"></i>
+							</span>
+							<span>Academic publications and articles</span>
+						</h3>
+						<ul>
 							<li>
 								ICTU, May 2018. <a hreflang="nl"
 						   		href="https://www.ictu.nl/publicaties/gros-onderzoekt-succesfactoren-scrum">
@@ -475,6 +580,7 @@
 							If you have any inquiries regarding the Grip on 
 							Software research, please contact the researcher at 
 							<a href="mailto:l.s.helwerda@liacs.leidenuniv.nl">
+							<i class="fas fa-envelope" aria-hidden="true"></i>
 							l.s.helwerda@liacs.leidenuniv.nl</a>.
 						</p>
 					</div>
