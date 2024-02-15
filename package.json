@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/grip-on-software/www",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4"
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bulma": "^0.9.4"
   }
 }
