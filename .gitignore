@@ -3,3 +3,12 @@ google*.html
 documents/
 node_modules/
 .well-known/
+# Visualization-site published copy
+branches.json
+*openapi.json
+schema/
+swagger/
+prediction/
+combined/
+ictu/
+wigo4it/

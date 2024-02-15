@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteRule \.git - [F,L,NC]
+RewriteRule README\.md - [F,L,NC]
+RewriteRule package.*\.json - [F,L,NC]
+RewriteRule .*~$ [F,L,NC]
+RewriteRule .*\.swp [F,L,NC]
