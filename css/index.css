@@ -1,3 +1,10 @@
+.sc {
+	font-variant: small-caps;
+}
+.content ul.fa-ul {
+	list-style-type: none;
+}
+
 @media screen and (max-width: 1023px) {
 	.navbar-menu {
 		min-height: 100vh;
