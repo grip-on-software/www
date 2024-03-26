@@ -15,6 +15,7 @@
   "homepage": "https://github.com/grip-on-software/www",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
+    "academicons": "https://github.com/jpswalsh/academicons/archive/refs/tags/v1.9.4.tar.gz",
     "bulma": "^0.9.4"
   }
 }
