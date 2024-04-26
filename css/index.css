@@ -40,3 +40,7 @@
 .container h3.list-header {
 	margin-bottom: 0;
 }
+
+figure.image {
+	cursor: pointer;
+}
