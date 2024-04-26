@@ -11,3 +11,7 @@ The repository should be checked out to a `public_html` directory in production.
 
 To install the icon fonts and CSS framework stylesheets, an installation of npm
 for Node.js is required. Use `npm install` within the repository checkout path.
+
+## Development
+
+Use `npm start` to run a local web server to host the static files and assets.
