@@ -18,6 +18,13 @@
 	.navbar-item.has-dropdown:not(.is-active) .navbar-dropdown {
 		display: none;
 	}
+
+	.columns {
+		margin-right: 0;
+	}
+	.columns .column {
+		padding-right: 0;
+	}
 }
 #icons-mobile {
 	position: fixed;
@@ -43,4 +50,11 @@
 
 figure.image {
 	cursor: pointer;
+}
+.card figure.image {
+	margin-left: 0;
+	margin-right: 0;
+}
+.card-footer-item {
+	hyphens: manual;
 }
