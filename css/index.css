@@ -47,6 +47,9 @@
 .container h3.list-header {
 	margin-bottom: 0;
 }
+.link-icon {
+	white-space: nowrap;
+}
 
 figure.image {
 	cursor: pointer;
