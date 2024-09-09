@@ -55,6 +55,12 @@ figure.image {
 	margin-left: 0;
 	margin-right: 0;
 }
+.card figure.image .tag {
+	font-weight: bold;
+	position: absolute;
+	bottom: 0.5rem;
+	right: 0.5rem;
+}
 .card-footer-item {
 	hyphens: manual;
 }
