@@ -64,6 +64,15 @@ figure.image {
 	bottom: 0.5rem;
 	right: 0.5rem;
 }
+.card figure.image .play-icon {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin-inline: auto;
+	width: fit-content;
+	padding: 1rem 1.5rem;
+}
 .card-footer-item {
 	hyphens: manual;
 }
